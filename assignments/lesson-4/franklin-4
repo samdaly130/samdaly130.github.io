@@ -2,8 +2,13 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>Lesson 4 Franklin Page</title>
-    </head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta name="description" content="Weather Document for Samantha Daly in course CIT230">
+    <title>Your Weather Man</title>
+    <meta 
+   
+   </head>
+    
     <body>
     <nav>
         <ul>
@@ -16,6 +21,7 @@
         
         </ul>
     </nav>
+    
     <main>
         
         <h2>Franklin</h2>
