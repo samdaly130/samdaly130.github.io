@@ -17,17 +17,23 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
+header h1 {position: relative; left: 420px;}
+header img {position: relative; left: 420px;}
+header .subheading {position: relative; left: 340px;}
 
 nav {
   font-family: Karla, cursive, sans-serif;
 }
-nav button {display: flex;}
+nav button {display: block;}
 nav ul {}
 nav ul li {}
 nav ul li a {}
@@ -41,9 +47,10 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
-.current {
-position: relative;
-right: 20px;}
+.current {-webkit-flex: initial;
+          flex: initial;
+  min-width: 500px;
+position: relative;}
 section.forecast {display: none;}
 section.forecast h3 {display: none;}
 table {display: none;}
@@ -52,10 +59,9 @@ article p.town-article img {  /* This structure refers to img elements that are 
 width: 100%; /* fill the page in the small/phone view */
     position: relative;
     right: 20px;
-    bottom: 100px
 }
 
-footer {position: relative}
+footer {}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
