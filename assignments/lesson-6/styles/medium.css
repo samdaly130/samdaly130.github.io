@@ -1,0 +1,90 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+ body {
+  font-size: 16px;
+    font-family: Quattrocento Sans, cursive, sans-serif;
+     color: #2b8b7f;
+     
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width:1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {width: 100%; margin: 0 auto; padding: 0;}
+header h1 {color: #908670;}
+header img {width: 100px; margin: 0 auto; padding: 0;}
+header .subheading { margin: 5px;}
+
+nav {
+  font-family: Karla, cursive, sans-serif;}
+nav button {display: none;} /* hamburger button does not need to be shown */
+nav ul {  
+    list-style-type: none;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #908670;
+    }
+nav ul li {
+    float: left;
+    }
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+nav ul li.active a {
+    background-color: #60c96c;
+}
+nav ul li a:hover {background-color: #111;}
+        
+   
+main { }
+main h2 {margin: 0; padding: 5px;}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%;
+    padding: 20px;}
+    
+     section{display: flex;
+    }
+    .highlow {width: 100%;
+    position: relative;
+    top: 50px;
+    left:20px;}
+      .conditions {width: 100%;
+    position: relative;
+    left: 20px;
+    top: 50px;}
+    
+    .current img {width: 100%;
+    padding: 20px;}
+
+
+section.forecast { 
+    display: flex; 
+    color: #908670;}  /* show the 10-day forecast with the medium view and up */
+    
+    table{border-collapse: collapse;
+        width: 75%;}
+    th {height: 50px;}
+    td {vertical-align: bottom;}
+    table, th, td {border: 1px solid #60c96c;}
+    
+    h3 {width: auto;
+    padding: 10px;}
+
+article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+footer {display: flex;}
+footer aside {display:flex;}
+footer>p {padding: 5px;} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+}
+
