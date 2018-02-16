@@ -10,7 +10,7 @@
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width:1000px;
+    max-width:100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -49,27 +49,27 @@ main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%;
     padding: 20px;}
     
-    section{display: flex;
+    section {display: flex;
     color: #dfb228;}
-    .highlow {width: 100%;
+    section .highlow {width: 100%;
     position: relative;
     top: 50px;
     left:20px;}
-      .conditions {width: 100%;
+    section .conditions {width: 100%;
     position: relative;
     left: 20px;
     top: 50px;}
     
-    .current img {width: 100%;
+    .current picture img {width: 100%;
     padding: 20px;}
     
 
-section.forecast { 
+section .forecast { 
     display: flex; 
     color: #908670;
     
     }  /* show the 10-day forecast with the medium view and up */
-    table{border-collapse: collapse;
+    table  {border-collapse: collapse;
     width: 75%}
     th {height: 50px;}
     td {vertical-align: bottom;}
