@@ -24,7 +24,7 @@
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav>
+  <nav class="responsive" id="navId">
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul>
     	<li><a href="#">Home</a></li>
@@ -40,7 +40,8 @@
     <h2>The City of Franklin</h2>
    
       <figure>
-      <img src="images/franklin-original.jpg" alt="city of Franklin">
+      <img src="images/franklin-original.jpg" alt="city of Franklin" 
+           srcset="images/franklin-large 1x, images/franklin-medium 2x, images/small 3x">
     </figure>
     
       <section>
@@ -103,9 +104,11 @@
       <h3>Franklin Breaks Record</h3>	
       <p class="town-article">
         <img src="images/city-of-franklin-6.jpg" alt="shop in Franklin">
-        short article content placeholder
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit nunc orci, vel sagittis tellus consequat sit amet. Nunc est nulla, malesuada a aliquam ut, hendrerit id velit. Integer lectus mi, venenatis id malesuada nec, bibendum nec ligula. Integer nisi metus, lacinia vitae tellus a, pretium condimentum sem. Sed velit libero, scelerisque nec fringilla vel, luctus nec risus. Aenean lobortis justo vel cursus porttitor. Integer ut molestie risus.
+
+Phasellus consequat elit eros, sit amet condimentum sapien egestas nec. Vivamus feugiat scelerisque orci, posuere consequat felis. Morbi id metus consectetur ante tempus dictum. Quisque vehicula justo a ligula ullamcorper, vitae tempus libero lobortis. Donec porttitor lobortis nisi. Quisque consequat ultrices viverra. Suspendisse vel risus ut orci congue pellentesque sit amet id justo. Proin fermentum, lorem ac ultricies varius, est enim iaculis metus, at laoreet mauris urna non massa. Aenean accumsan magna vitae felis sollicitudin tincidunt. Quisque ac dignissim nibh. Vestibulum ut ante tincidunt sapien iaculis faucibus. Donec efficitur lectus vitae sagittis efficitur. Sed mauris tellus, rhoncus ut felis et, placerat venenatis ex. Vivamus rutrum felis quis felis finibus, id volutpat orci venenatis. Etiam nec mattis magna, nec condimentum ante. Integer vitae ullamcorper odio, nec feugiat augue.
           </p>
-         <p style="font-family: Over the Rainbow;">-Your Weather Man</p>
+         <p class="signature">-Your Weather Man</p>
 		</article>	
       
   
@@ -117,7 +120,7 @@
       Samantha Daly - samdaly130@gmail.com
     </aside>
    
-      <p class="footer-bar">&copy;2017 All Rights Reserved | Your Weather Man | <span id="currentdate">Current Date Placeholder</span></p>
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Your Weather Man | <span id="currentdate">"current date placeholder</span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>

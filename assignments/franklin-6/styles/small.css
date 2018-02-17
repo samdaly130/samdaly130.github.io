@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-    font-family: Quattrocento Sans, cursive, sans-serif;
+    font-family: "Quattrocento Sans", cursive, sans-serif;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -31,16 +31,42 @@ header img {}
 header .subheading {}
 
 nav {
+    background-color: #ccc;
   font-family: Karla, cursive, sans-serif;
 }
-nav button {display: block;}
-nav ul {}
-nav ul li {}
-nav ul li a {}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+    float: left;
+    display: block;}
+  nav ul.hide {position: relative;}
+    nav ul.hide li {background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd;}
+    nav ul.hide li a {padding: 1rem; text-align: center; display: block; text-decoration: none;}
+    nav ul.hide li a:hover {background-color: #ddd}
+nav ul {list-style-type: none;
+padding: 0;
+margin: 0;}
+
+nav ul li {display: none;}
+
+nav ul li a {float: left;
+display:block;
+padding: .8rem 2%;
+text-decoration: none;
+color: #000;
+border-top: 1px solid rgba(0,0,0,0.3);
+}
 nav ul li.active a {
     background-color: #60c96c;
+    color: white;
 }
-nav ul li a:hover {}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;}
 
 main {padding: 0 2%; min-height: 10rem;}
 main h2 {}
@@ -67,7 +93,7 @@ float: right;
     margin: 0 0 2% 2%;
 }
 article p.signature {text-align: right; 
-    font-family: Over the Rainbow;
+    font-family: "Over the Rainbow", sans-serif;
 margin: 0 2% 0 0;}
 
 footer {}
@@ -75,3 +101,9 @@ footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
