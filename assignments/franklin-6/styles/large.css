@@ -2,7 +2,7 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
  body {
   font-size: 16px;
-    font-family: Quattrocento Sans, cursive, sans-serif;
+    font-family: "Quattrocento Sans", cursive, sans-serif;
      color: #2b8b7f;
      
   /* Declare the base font-family - from google font api or other */
@@ -35,7 +35,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 16px;
+    padding: .6rem 1rem;
     text-decoration: none;
     }
 nav ul li.active a {

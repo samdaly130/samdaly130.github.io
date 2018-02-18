@@ -8,7 +8,7 @@
   <meta name="author" content="Samantha Daly">
   <meta name="description" content="Franklin City Page">
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Karla|Over+the+Rainbow|Quattrocento+Sans" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -24,9 +24,9 @@
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav class="responsive" id="navId">
+  <nav class="clearfix">
     <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+    <ul id="primaryNav" class="hide">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -40,8 +40,10 @@
     <h2>The City of Franklin</h2>
    
       <figure>
-      <img src="images/franklin-original.jpg" alt="city of Franklin" 
-           srcset="images/franklin-large 1x, images/franklin-medium 2x, images/small 3x">
+      <img src="images/franklin-original.jpg" alt="city of Franklin" sizes="100vw"
+           srcset="images/franklin800.jpg 800w, 
+                   images/franklin600.jpg 600w, 
+                   images/franklin400.jpg 400w">
     </figure>
     
       <section>
@@ -104,9 +106,9 @@
       <h3>Franklin Breaks Record</h3>	
       <p class="town-article">
         <img src="images/city-of-franklin-6.jpg" alt="shop in Franklin">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit nunc orci, vel sagittis tellus consequat sit amet. Nunc est nulla, malesuada a aliquam ut, hendrerit id velit. Integer lectus mi, venenatis id malesuada nec, bibendum nec ligula. Integer nisi metus, lacinia vitae tellus a, pretium condimentum sem. Sed velit libero, scelerisque nec fringilla vel, luctus nec risus. Aenean lobortis justo vel cursus porttitor. Integer ut molestie risus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus dui eros, eu feugiat velit interdum vitae. Proin auctor diam in velit volutpat ultricies. Proin mollis condimentum orci eu dictum. Vivamus tincidunt magna ut magna tempor maximus. Nam laoreet facilisis sollicitudin. Nulla eu sapien magna. Curabitur efficitur, orci ut semper cursus, justo quam luctus felis, et aliquet libero lorem non erat. Nulla facilisi. Mauris auctor congue efficitur. Fusce commodo velit ac ligula accumsan pulvinar. Nunc id laoreet nulla. Nulla sed diam sit amet lacus ornare finibus. Suspendisse porta mattis venenatis. Ut vestibulum tempus est, id ultrices lectus imperdiet a. Etiam venenatis neque nec quam pulvinar ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-Phasellus consequat elit eros, sit amet condimentum sapien egestas nec. Vivamus feugiat scelerisque orci, posuere consequat felis. Morbi id metus consectetur ante tempus dictum. Quisque vehicula justo a ligula ullamcorper, vitae tempus libero lobortis. Donec porttitor lobortis nisi. Quisque consequat ultrices viverra. Suspendisse vel risus ut orci congue pellentesque sit amet id justo. Proin fermentum, lorem ac ultricies varius, est enim iaculis metus, at laoreet mauris urna non massa. Aenean accumsan magna vitae felis sollicitudin tincidunt. Quisque ac dignissim nibh. Vestibulum ut ante tincidunt sapien iaculis faucibus. Donec efficitur lectus vitae sagittis efficitur. Sed mauris tellus, rhoncus ut felis et, placerat venenatis ex. Vivamus rutrum felis quis felis finibus, id volutpat orci venenatis. Etiam nec mattis magna, nec condimentum ante. Integer vitae ullamcorper odio, nec feugiat augue.
+Maecenas tincidunt erat imperdiet, volutpat urna quis, lacinia neque. Ut ut sem pharetra, lacinia sem a, maximus justo. Aenean quis nisl feugiat, pretium libero vel, consequat elit. Nulla imperdiet tortor sit amet libero iaculis, vitae imperdiet ante varius. Ut vitae congue ligula. Maecenas ac ultricies felis. Nunc vel dolor nec enim convallis dapibus. Mauris tincidunt ex in finibus pellentesque. Nulla ut vestibulum mi. Maecenas malesuada ut odio eget faucibus.
           </p>
          <p class="signature">-Your Weather Man</p>
 		</article>	
@@ -120,7 +122,7 @@ Phasellus consequat elit eros, sit amet condimentum sapien egestas nec. Vivamus 
       Samantha Daly - samdaly130@gmail.com
     </aside>
    
-      <p class="footer-bar">&copy;2017 All Rights Reserved | Your Weather Man | <span id="currentdate">"current date placeholder</span></p>
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Your Weather Man | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
