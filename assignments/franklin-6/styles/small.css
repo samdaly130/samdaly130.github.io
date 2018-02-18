@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-    font-family: "Quattrocento Sans", cursive, sans-serif;
+    font-family: "Quattrocento Sans", sans-serif;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -25,76 +25,45 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   column-gap: 1em;
 }
 
-header {text-align: center;}
-header h1 {}
+header {}
+header h1 {text-align: center;}
 header img {}
-header .subheading {}
+header .subheading {text-align: center;}
 
 nav {
+  font-family: "Karla", sans-serif;
     background-color: #ccc;
-  font-family: Karla, cursive, sans-serif;
 }
-
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #555;
-    float: left;
-    display: block;}
-  nav ul.hide {position: relative;}
-    nav ul.hide li {background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd;}
-    nav ul.hide li a {padding: 1rem; text-align: center; display: block; text-decoration: none;}
-    nav ul.hide li a:hover {background-color: #ddd}
-nav ul {list-style-type: none;
-padding: 0;
-margin: 0;}
-
-nav ul li {display: none;}
-
-nav ul li a {float: left;
-display:block;
-padding: .8rem 2%;
-text-decoration: none;
-color: #000;
-border-top: 1px solid rgba(0,0,0,0.3);
-}
+nav button {display: block; margin: .2rem 2%; background-color: transparent; border: none; font-size: 1.6rem; color: #555;}
+nav ul {list-style-type: none; padding: 0; margin: 0;}
+nav ul li {}
+nav ul li a {display: block; padding: .8rem 2%; text-decoration: none; color: #000; border-top: 1px solid rgba(0,0,0,0.3);}
 nav ul li.active a {
     background-color: #60c96c;
-    color: white;
 }
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 nav ul.hide {display: none;}
 
-main {padding: 0 2%; min-height: 10rem;}
+main {width: 100%}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
-section .highlow {text-align: center;}
-
-.current picture img {width: 100%;}
-
-section .conditions {text-align: center;}
-
+.current img {width: 100%;}
 section.forecast {display: none;}
 section.forecast h3 {display: none;}
 table {display: none;}
-
-article p.town-article {
-    width: 100%;
-}
+th {display: none;}
+td {display: none;}
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-width: 100%; /* fill the page in the small/phone view */
+width: 100%;  /* fill the page in the small/phone view */
 float: right;
-    margin: 0 0 2% 2%;
 }
-article p.signature {text-align: right; 
-    font-family: "Over the Rainbow", sans-serif;
-margin: 0 2% 0 0;}
+
+.signature {font-family: "Over the Rainbow", cursive; float: right;}
+
 
 footer {}
 footer aside {}
