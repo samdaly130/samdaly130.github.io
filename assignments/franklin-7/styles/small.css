@@ -1,0 +1,89 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+/*--------BODY------*/
+body {
+  font-size: 16px;
+    font-family: "Quattrocento Sans", sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+  border: solid #809ea1 5px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
+}
+/*-------------HEADER-----------*/
+
+
+header {}
+header h1 {text-align: center;}
+header img {width: 200px; }
+header .subheading {text-align: center;}
+
+/*------------NAVIGATION-------*/
+
+nav {
+  font-family: "Karla", sans-serif;
+    background-color: #ccc;
+}
+nav button {display: flex; margin: .2rem 2%; background-color: transparent; border: none; font-size: 1.6rem; color: #555;}
+nav ul {list-style-type: none; padding: 0; margin: 0;}
+nav ul li {}
+nav ul li a {display: flex; padding: .8rem 2%; text-decoration: none; color: #000; border-top: 1px solid rgba(0,0,0,0.3);}
+nav ul li.active a {
+    background-color: #60c96c;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;}
+
+/*------------MAIN-----------*/
+
+main {width: 100%}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+/*---------SECTION CURRENT---------*/
+
+.current img {width: 100%;}
+section.forecast {display: none;}
+section.forecast h3 {display: none;}
+table {display: none;}
+th {display: none;}
+td {display: none;}
+
+/*----------ARTICE--------*/
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+width: 100%;  /* fill the page in the small/phone view */
+float: right;
+}
+
+.signature {font-family: "Over the Rainbow", cursive; float: right;}
+
+/*----------FOOTER-----------*/
+
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

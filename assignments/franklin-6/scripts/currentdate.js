@@ -1,3 +1,1 @@
-function currentDate(){
-    document.getElementById("currentdate").innerHTML = new Date;
-}
+document.getElementById('currentdate').innerHTML = new Date();
