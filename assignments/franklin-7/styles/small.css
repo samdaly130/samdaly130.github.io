@@ -29,7 +29,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {}
 header h1 {text-align: center;}
-header img {width: 200px; }
+header img {display: flex; align-items: center; width: 300px;}
 header .subheading {text-align: center;}
 
 /*------------NAVIGATION-------*/
@@ -38,10 +38,16 @@ nav {
   font-family: "Karla", sans-serif;
     background-color: #ccc;
 }
-nav button {display: flex; margin: .2rem 2%; background-color: transparent; border: none; font-size: 1.6rem; color: #555;}
+nav button {display: flex; margin: .2rem 2%; background-color: transparent;
+    border: none; font-size: 1.6rem; color: #555;}
 nav ul {list-style-type: none; padding: 0; margin: 0;}
 nav ul li {}
-nav ul li a {display: flex; padding: .8rem 2%; text-decoration: none; color: #000; border-top: 1px solid rgba(0,0,0,0.3);}
+nav ul li a {display: flex; 
+    padding: .8rem 2%; 
+    text-decoration: none; 
+    color: #000; 
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
 nav ul li.active a {
     background-color: #60c96c;
 }
@@ -65,10 +71,12 @@ table {display: none;}
 th {display: none;}
 td {display: none;}
 
+
 /*----------ARTICE--------*/
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-width: 100%;  /* fill the page in the small/phone view */
+width: 100%; /* fill the page in the small/phone view */
+margin: 2%;
 float: right;
 }
 
@@ -79,6 +87,11 @@ float: right;
 footer {}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/*-----------GALLERY PAGE CSS----------------*/
+
+.gallery {display: grid; grid-row-gap: 2em;}
+.gallery figcaption {padding: 1%;}
 
 /* Other Class Selectors */
 
