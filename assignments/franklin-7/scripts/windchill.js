@@ -4,7 +4,7 @@ function doInputOutput() {
     var s = 5;
     var result = windChill(t, s);
     
-    document.getElementById('outputDiv').innerHTML = Math.round(result);
+    document.getElementById('outputDiv').innerHTML = result;
 }
 
 function windChill(tempF, speed) {

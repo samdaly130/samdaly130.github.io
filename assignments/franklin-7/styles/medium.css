@@ -69,9 +69,14 @@ main figure img { width: 100%;
     .current img {width: 500px;
     padding: 20px;}
     
-    .windchill {width: 100%;
-position: relative; right: 105px; top: 160px;}
-
+    .button {display: inline-flex;
+    width: 75px; height: 50px;
+    position: relative;
+    right: 70px;
+        top: 195px;
+     }
+    .button div {padding: 10px;
+    align-self: center;}
  h3 { display: inline-flex; width: 100%;
     padding: 10px;}
     
