@@ -107,6 +107,13 @@ footer>p {padding: 5px;} /* This structure refers to p elements that are direct 
         grid-column-gap: 10px;
         grid-row-gap: 1em;
     }
+    
+/*--------STORM CENTER------------*/
+    
+    fieldset {
+        display: flex;
+        justify-content: center;
+    }
 
 /* Other Class Selectors */
 }
