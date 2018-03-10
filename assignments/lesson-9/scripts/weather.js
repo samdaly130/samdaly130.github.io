@@ -1,6 +1,5 @@
 /*-------API KEY: 2484b1bb70021030 ------*/
-var section h2 = document.querySelector('h2');
-var section p = document.querySelector('p');
+var section = document.getElementById('jsonSec');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -8,7 +7,7 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function() {
+request.onload = function () {
    var weatherMan = request.response;
     showData(weatherMan);
 }
@@ -16,7 +15,7 @@ request.onload = function() {
 function showData(jsonObj) {
     var towns = jsonObj['towns'];
     
-    for (var i = 0; i <towns.length; i++) {
+    for (var i = 0; i < towns.length; i++) {
         
         var article = document.createElement('article');
         var header = document.createElement('h1');
@@ -35,9 +34,9 @@ function showData(jsonObj) {
         events.textContent = 'Events: ';
         
         var eventList = towns[i].events;
-        for (var e = 0; e < eventList.length; e++) {
+        for (var j = 0; j < eventList.length; j++) {
             var listItem = document.createElement('li');
-            listItem.textContent = events[e];
+            listItem.textContent = events[j];
             events.appendChild(listItem);
         }
         

@@ -47,24 +47,20 @@
     </figure>
     
       <section>
-      <h3>Sunny</h3>    
       
-          <div class="highlow">
-        <p>High: 90&deg;F</p>  
-        <p>Low:66&deg;F</p>  
-      </div>
+          <p>Conditions: <span id='conditions'>Partly Cloudy</span>
+          <!--current weather string---> 
+          </p>   
       
-          <div class="current">
+        <p>Temperature: <span id="temperature">60</span>&deg;</p>
+        <!---current temp--->
+      <p>Wind Speed: <span id="windS">5mph</span></p>
+      <!---wind speed in mph--->
+         <img src"" alt="current weather" id="weather_icon"> 
+         <!---img icon--->
+        <p id="forecast">Chance of Showers</p>
+        <p id="lows">Lows in the 80s</p>
         
-        <picture>
-            <img src="images/franklin-sunny.jpg" alt="sunny scenery">
-        </picture>
-      </div>   
-      
-          <div class="conditions">
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5mph SW</p>  
-      </div>   
           
           
 <div class="button"><button type="button" onclick="doInputOutput()">Wind Chill</button>
@@ -120,16 +116,9 @@ Maecenas tincidunt erat imperdiet, volutpat urna quis, lacinia neque. Ut ut sem 
 		</article>	
      
       <!--JSON-->
-      <section id= "jobject">
-         
-          
-          <h2></h2>
-    
-          <p> </p>
-          
+       <section id= "jsonSec">
       
       </section>
-      
   
   </main>
     
@@ -146,7 +135,8 @@ Maecenas tincidunt erat imperdiet, volutpat urna quis, lacinia neque. Ut ut sem 
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/weather.js"></script>
+  <script src="scripts/wu-weather.js"></script>
         
-        </script>
+
 </body>
 </html>

@@ -84,6 +84,13 @@ float: right;
 
 .signature {font-family: "Over the Rainbow", cursive; float: right;}
 
+/*-----JSON-----*/
+
+.jsonSec {width: 100%;
+display: flex;}
+
+.jsonSec ul {display: flex;}
+
 /*----------FOOTER-----------*/
 
 footer {}
