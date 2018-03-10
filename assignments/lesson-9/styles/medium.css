@@ -81,15 +81,14 @@ main figure img { width: 100%;
     padding: 10px;}
     
 section.forecast { 
-    display: inline-flex;
+    display: inline-block;
     width: 100%;
-    color: #908670;}  /* show the 10-day forecast with the medium view and up */
+    }  /* show the 10-day forecast with the medium view and up */
     
-    table{display: flex; border-collapse: collapse;
-        width: 75%;}
-    th { display: inline-flex; height: 50px;}
-    td {display: inline-flex;}
-    table, th, td {border: 1px solid #60c96c;}
+    table{display: inline-block; text-align: center;}
+    th { display: inline-flex; padding: 5px;}
+    td {display: inline-grid; grid-template-columns: 1fr; padding: 10px;}
+    table, th, td {border: 1px solid #60c96c; border-collapse: collapse;}
     section.forecast h3 {display: flex; width: 25%}
 
 article p.town-article img { width: 62.666%; float:right;}  /* responsive images */
@@ -114,7 +113,10 @@ footer>p {padding: 5px;} /* This structure refers to p elements that are direct 
         display: flex;
         justify-content: center;
     }
+    
+    /*JSON*/
+    
 
 /* Other Class Selectors */
-}
+
 

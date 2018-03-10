@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','http://api.wunderground.com/api/2484b1bb70021030/conditions/q/MN/Franklin.json',true);
+weatherObject.open('GET','//api.wunderground.com/api/2484b1bb70021030/conditions/q/MN/Franklin.json',true);
 
 weatherObject.send();
 
@@ -20,7 +20,7 @@ document.getElementById('weather_icon').src = weatherInfo.current_observation.ic
 
 var forecastObject = new XMLHttpRequest();
 
-forecastObject.open('GET','http://api.wunderground.com/api/2484b1bb70021030/forecast/q/MN/Franklin.json',true);
+forecastObject.open('GET','//api.wunderground.com/api/2484b1bb70021030/forecast/q/MN/Franklin.json',true);
 
 forecastObject.send();
 

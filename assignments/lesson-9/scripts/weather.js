@@ -35,7 +35,7 @@ function showData(jsonObj) {
         var eventList = towns[i].events;
         for (var j = 0; j < eventList.length; j++) {
             var listItem = document.createElement('li');
-            listItem.textContent = events[j];
+            listItem.textContent = eventList[j];
             events.appendChild(listItem);
         }
         
