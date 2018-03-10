@@ -18,7 +18,6 @@ function showData(jsonObj) {
     for (var i = 0; i < towns.length; i++) {
         
         var article = document.createElement('article');
-        var header = document.createElement('h1');
         var h2 = document.createElement('h2');
         var motto = document.createElement('p');
         var yearFounded = document.createElement('p');
