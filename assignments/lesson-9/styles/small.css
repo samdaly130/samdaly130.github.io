@@ -27,10 +27,10 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 /*-------------HEADER-----------*/
 
 
-header {}
-header h1 {text-align: center;}
-header img {display: flex; align-items: center; width: 300px;}
-header .subheading {text-align: center;}
+header {display: flex; flex-direction: column; align-items: center;}
+header h1 {color: #908670;}
+header img {width: 300px;}
+header .subheading {}
 
 /*------------NAVIGATION-------*/
 
@@ -78,7 +78,7 @@ td {display: none;}
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
 width: 100%; /* fill the page in the small/phone view */
-margin: 2%;
+padding: 2%;
 float: right;
 }
 
@@ -86,16 +86,20 @@ float: right;
 
 /*-----JSON-----*/
 
-.jsonSec {width: 100%;
-display: flex;}
+#jsonSec h2, p {padding: 2%; display: flex; flex-flow: column wrap;}
+#jsonSec {padding: 3rem;}
+.townHead{padding: 8px;}
+#jsonSec ul li {padding: 2% 0 0 2%}
 
-.jsonSec ul {display: flex;}
+/*----JSON CONDITIONS---*/
 
+#conditions_Franklin {display: flex; flex-direction: column; align-items: center}
 /*----------FOOTER-----------*/
 
 footer {}
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer aside {padding: 2% 0 0 2%;}
+footer>p {padding: 1rem;}
+/* This structure refers to p elements that are direct children of the footer element */
 
 /*-----------GALLERY PAGE CSS----------------*/
 

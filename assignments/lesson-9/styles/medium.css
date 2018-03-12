@@ -15,10 +15,10 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   padding: 20px;
 }
 
-header {width: 100%; margin: 0 auto; padding: 0;}
+header {}
 header h1 {color: #908670;}
-header img {width: 100px; margin: 0 auto; padding: 0;}
-header .subheading { margin: 5px;}
+header img {}
+header .subheading {}
 
 nav {
   font-family: "Karla", sans-serif;}
@@ -54,30 +54,16 @@ main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%;
     padding: 20px;}
     
-     section {display: flex;}
+/*JSON CONDITIONS*/
     
-    .highlow {width: 100%;
-    position: relative;
-    top: 50px;
-    left:20px;}
-      
-    .conditions {width: 100%;
-    position: relative;
-    left: 20px;
-    top: 50px;}
-    
-    .current img {width: 500px;
-    padding: 20px;}
-    
-    .button {display: inline-flex;
+    #conditons_Franklin {display: flex; flex-direction: column; align-items: center;
+    }
+    .button {
     width: 75px; height: 50px;
-    position: relative;
-    right: 70px;
-        top: 195px;
      }
-    .button div {padding: 10px;
-    align-self: center;}
- h3 { display: inline-flex; width: 100%;
+    .button div {padding: 10px;}
+ 
+    h3 { display: inline-flex; width: 100%;
     padding: 10px;}
     
 section.forecast { 
@@ -116,8 +102,9 @@ footer>p {padding: 5px;} /* This structure refers to p elements that are direct 
 }
     
     /*JSON*/
-    
-
+#jsonSec {display: grid; grid-template-columns: repeat(3, 1fr);}
+.townHead {grid-column-start: 1; grid-row-start: 1; grid-row-end:3;}
+#jsonSec ul li, h3 {color: #908670;}
 /* Other Class Selectors */
 
 
