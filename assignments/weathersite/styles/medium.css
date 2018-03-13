@@ -1,0 +1,108 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+ body {
+  font-size: 16px;
+    font-family: "Quattrocento Sans", sans-serif;
+     color: #2b8b7f;
+     
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width:100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {}
+header h1 {color: #908670;}
+header img {}
+header .subheading {}
+
+nav {
+  font-family: "Karla", sans-serif;}
+nav button {display: none;} /* hamburger button does not need to be shown */
+    nav ul.hide {display: flex;}
+nav ul {  
+    list-style-type: none;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #908670;
+    }
+nav ul li {
+    float: left;
+    }
+nav ul li a {
+    display: flex;
+    color: white;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    }
+nav ul li.active a {
+    background-color: #60c96c;
+}
+nav ul li a:hover {background-color: #111;}
+        
+   
+main {}
+main h2 {margin: 0; padding: 5px;}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%;
+    padding: 20px;}
+    
+/*JSON CONDITIONS*/
+    
+    #conditons_Franklin {display: flex; flex-direction: column; align-items: center;
+    }
+    .button {
+    width: 75px; height: 50px;
+     }
+    .button div {padding: 10px;}
+ 
+    h3 { display: inline-flex; width: 100%;
+    padding: 10px;}
+    
+section.forecast { 
+    display: inline-block;
+    width: 100%;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+    table{display: inline-block; text-align: center;}
+    th { display: inline-flex; padding: 5px;}
+    td {display: inline-grid; grid-template-columns: 1fr; padding: 10px;}
+    table, th, td {border: 1px solid #60c96c; border-collapse: collapse;}
+    section.forecast h3 {display: flex; width: 25%}
+
+article p.town-article img { width: 62.666%; float:right;}  /* responsive images */
+
+footer {display: flex;}
+footer aside {display:flex;}
+footer>p {padding: 5px;} /* This structure refers to p elements that are direct children of the footer element */
+    
+/*-------------GALLERY PAGE CSS--------*/
+    
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+    
+/*--------STORM CENTER------------*/
+    
+    fieldset {
+        display: flex;
+        justify-content: center;
+    }
+}
+    
+    /*JSON*/
+
+/* Other Class Selectors */
+
+
