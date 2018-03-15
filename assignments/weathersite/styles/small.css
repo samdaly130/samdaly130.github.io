@@ -13,6 +13,7 @@
 body {
   font-size: 16px;
     font-family: "Quattrocento Sans", sans-serif;
+    color: #2b8b7f;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -96,8 +97,8 @@ article p.town-article {color: #2b8b7f;}
 /*-----JSON-----*/
 
 
-#jsonSec {padding: 2rem; display: flex; flex-direction: column; text-align: center;}
-#jsonSec ul li {padding: 2% 0 0 2%; color:#60c96c; }
+#jsonSec {width: 100%; display: grid; grid-template-columns: 1fr; grid-gap: 1em; margin: 0; padding: 3%;}
+#jsonSec ul li {padding: 2%; color:#60c96c; }
 #jsonSec h2 {color: #908670;}
 
 
@@ -106,9 +107,12 @@ article p.town-article {color: #2b8b7f;}
 #conditions_Franklin {display: flex; flex-direction: column; align-items: center}
 /*----------FOOTER-----------*/
 
-footer {display: flex; flex-direction: column; align-items: center;}
-footer aside {padding: 2% 0 0 2%;}
-footer>p {padding: 1rem;}
+footer { margin: 0;
+    padding: 10px;
+    background-color: #ccc;}
+footer aside {padding: 10px;}
+footer>p {margin: 0;
+padding: 10px;}
 /* This structure refers to p elements that are direct children of the footer element */
 
 /*-----------GALLERY PAGE CSS----------------*/

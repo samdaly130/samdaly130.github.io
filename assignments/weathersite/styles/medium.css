@@ -96,7 +96,7 @@ footer>p {padding: 5px;} /* This structure refers to p elements that are direct 
 }
     
     /*JSON*/
-#jsonSec {display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows:  align-items: stretch;}
+#jsonSec {display: grid; grid-template-columns: repeat(2, 1fr); align-items: baseline;}
 #jsonSec p {}
 .townHead {display: none;}
 /* Other Class Selectors */
