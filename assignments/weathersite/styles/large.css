@@ -1,6 +1,11 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
+    header, nav, main, footer {width: 75%; align-items: center;} 
+    
+    nav ul {padding: 1px}
+    nav ul li {padding: 1rem}
+    
   article p.town-article img { width: 29.333%; }
     
     nav ul li a {padding: .6rem 1rem;}

@@ -60,7 +60,7 @@ nav ul li a {display: flex;
 nav ul li.active a {
     background-color: #60c96c;
 }
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+nav ul li a:hover {background-color: #809ea1;}
 
 nav ul.hide {display: none;}
 
@@ -74,13 +74,10 @@ main h3 {color: #809ea1;}
 
 /*---------SECTION CURRENT---------*/
 
-.current img {width: 100%;}
-section.forecast {display: none;}
-section.forecast h3 {display: none;}
-table {display: none;}
-th {display: none;}
-td {display: none;}
 
+.forecast {display: none;}
+
+.button {padding: 3% 0 0 0;}
 .button div {padding: 2%;}
 
 
@@ -98,9 +95,8 @@ article p.town-article {color: #2b8b7f;}
 
 /*-----JSON-----*/
 
-#jsonSec h2, p {margin: 0;padding: 3% 0 0 0; display: flex; flex-flow: column wrap;}
-#jsonSec {padding: 2rem;}
-.townHead{padding: 8px; color:#dfb228; }
+
+#jsonSec {padding: 2rem; display: flex; flex-direction: column; text-align: center;}
 #jsonSec ul li {padding: 2% 0 0 2%; color:#60c96c; }
 #jsonSec h2 {color: #908670;}
 
@@ -110,7 +106,7 @@ article p.town-article {color: #2b8b7f;}
 #conditions_Franklin {display: flex; flex-direction: column; align-items: center}
 /*----------FOOTER-----------*/
 
-footer {}
+footer {display: flex; flex-direction: column; align-items: center;}
 footer aside {padding: 2% 0 0 2%;}
 footer>p {padding: 1rem;}
 /* This structure refers to p elements that are direct children of the footer element */
