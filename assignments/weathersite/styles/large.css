@@ -6,7 +6,7 @@
     nav ul {padding: 1px}
     nav ul li {padding: 1rem}
     
-  article p.town-article img { width: 29.333%; }
+  article p.town-article img { width: 29.333%; margin: 0;}
     
     nav ul li a {padding: .6rem 1rem;}
     
@@ -21,7 +21,7 @@
         grid-row-gap: 1em;
     }
     
- .gallery img:hover, figcaption:hover {box-shadow: 5px 5px 10px grey;}
+ .gallery figure:hover {box-shadow: 5px 5px 10px grey;}
     
     /*--------STORM CENTER--------*/
     
@@ -30,8 +30,7 @@
         grid-column-gap: 20px;
     }
     
-    .submit {position: relative;
-    left: 575px;}
+    .submit {grid-column-start: 2;}
     }
 
 /*JSON*/

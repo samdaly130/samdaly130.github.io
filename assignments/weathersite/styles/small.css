@@ -115,6 +115,8 @@ footer>p {margin: 0;
 padding: 10px;}
 /* This structure refers to p elements that are direct children of the footer element */
 
+/*----------HOMEPAGE--------*/
+
 /*-----------GALLERY PAGE CSS----------------*/
 
 .gallery {display: grid; grid-row-gap: 2em;}
