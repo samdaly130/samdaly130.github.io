@@ -1,0 +1,309 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* COLORS
+#222e50 
+#23231a 
+#6a5837 
+#988f2a 
+#fe5f00  */
+
+* { box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body, html {
+    height:100%;
+    margin: 0;
+}
+body {
+  font-size: 15px;
+font-family: "Muli",sans-serif; 
+ padding: 20px;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    width: 100%; 
+ -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
+    padding: 5%;
+}
+
+header {
+    font-family: "Bowlby One SC", cursive;
+    color: #222e50; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    
+    background-image: url(header-image/header-pic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header h1 {}
+header img {
+    width: 100px;
+margin: 0;}
+header .subheading {}
+nav {
+    font-family: "Bowlby One SC", cursive;
+    background-color:#fff;
+}
+nav button {display: flex; 
+    margin: .2rem 2%; 
+    background-color: transparent;
+    border: none; 
+    font-size: 1.6rem; 
+    color: #fe5f00;
+}
+nav ul {list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+nav ul li {}
+nav ul li a {
+    display: flex; 
+    padding: .8rem 2%; 
+    text-decoration: none; 
+    color: #988f2a ; 
+    border-top: 1px solid #988f2a;
+}
+nav ul li.active a {
+    background-color: #ccc;
+}
+nav ul li a:hover {
+    background-color: #fe5f00;
+}
+nav ul.hide {
+    display: none;
+}
+
+main {
+    color: #23231a;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+main h1, h3 {
+    color: #6a5837;
+}
+
+main h2 {color: #fe5f00;}
+
+main ul {list-style-type: none;}
+main ul li {padding: 0 0 2% 0}
+
+/* IN ARTICLE LINKS */
+a {
+    color: #988f2a;
+}
+section {}
+
+/* HOMEPAGE */
+
+/* SLIDESHOW */
+.text { 
+    color: #23231a;
+  font-size: 15px;
+  padding: 20px 12px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+    display: none;
+}
+.prev, .next {
+    display: none;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    
+}
+
+fieldset {
+    color: white;
+    background-color: #222e50;
+    
+   
+}
+
+legend {
+   background-color: #fff;
+    border: 2px solid #222e50; 
+    color: #fe5f00;
+    padding: 10px;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 1%
+}
+
+label span {
+    display: flex;
+    font-size: 15px;
+    padding: 2%
+}
+input {width: 75%;}
+
+input.submit {
+    -webkit-appearance: none; /*remove the apple mobile default styling*/ color: #fff;
+    font-weight: bold;
+    color: #fe5f00;
+    border: 2px solid #222e50;
+    width: 25%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background-color: transparent;
+    
+}
+
+/* HOMEPAGE EVENTS */
+.hp-events ul {
+    list-style-type: none;
+}
+.hp-events ul li {
+    padding: 2%;
+}
+
+/* ADVENTURE TOURS PAGE */
+.content {
+margin: 5px;
+border: 1px solid #222e50;
+}
+.content img {
+    width: 100%;
+height: auto;}
+
+.content h3, p {padding: 0 0 0 2%;}
+.column {
+    padding: 0 6px;
+width: 100%;
+}
+
+
+.dt-info h2 {color: #fe5f00; }
+.dt-info ul {border: 2px solid #222e50;}
+.dt-info ul li {list-style-type: none;
+padding: 2%}
+.internal:hover {color: #ccc;}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* EVENTS PAGE */
+
+/* SALES PAGE */
+
+.sales-content {
+    width: 100%;
+    padding: 10px;
+}
+
+.sales-content img {
+    width: 100%;
+    border: 2px solid #222e50;
+}
+
+.sales-description {list-style-type: circle;}
+
+.sales-button {
+  border-radius: none;
+  background-color: #fe5f00;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sales-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sales-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sales-button:hover span {
+  padding-right: 25px;
+}
+
+.sales-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#price {color: #988f2a;}
+
+/* SERVICES PAGE */
+
+.services {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 2px solid #fe5f00;
+    margin: 20px;
+}
+
+th {color: #6a5837;}
+
+td {color: #23231a;}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+td:nth-child(even) {
+    color: #988f2a; 
+    font-weight: bold;
+}
+
+footer {
+    background-color: #988f2a;
+}
+footer a{
+    color: #23231a; 
+text-decoration: none;}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
