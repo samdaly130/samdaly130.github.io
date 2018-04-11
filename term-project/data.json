@@ -1,0 +1,39 @@
+{
+    "head" : "Services",
+  
+    "table" : [
+     
+      { "services": [
+         "True Wheel", 
+      "Adjust Wheel Bearing",
+      "Adjust Headset",
+      "Adjust Derailleur",
+      "Adjust Brakes",
+      "Adjust Bottom Bracket Bearing",
+      "Adjust Front Hub",
+      "Adjust Rear Hub",
+      "Clean Bike",
+      "Wax Bike",
+      "Clean and Lube Drivetrain",
+      "Overhaul Front Hub"
+        ]
+      },
+
+{ "prices" : [
+    "$5-$20",
+    "$5-$10",
+    "$7",
+    "$5-$15",
+    "$5-$15",
+    "$5-$15",
+    "$5",
+    "$10",
+    "$5-$15",
+    "$12",
+    "$10-$25",
+    "$15-$25"
+    ]
+}
+      ]
+}
+      
