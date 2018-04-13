@@ -40,6 +40,8 @@
   </nav>
     
   <main>
+     
+<section></section>
  <table></table>
   
   </main>
@@ -55,49 +57,7 @@
 
   <script src="js/hamburger.js"></script>
   <script src="js/currentdate.js"></script>
-        <script>
-            var main = document.querySelector('main');
-            var table = document.querySelector('table');
-            
-            var requestURL = 'https://samdaly130.github.io/term-project/data.json';
-            
-            var request = new XMLHttpRequest();
-        
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            
-            request.onload = function() {
-                var services = request.response;
-                main(services);
-                table(services);
-            }
-            
-            function main(jsonObj) {
-                
-                var myH1 = document.createElement('h1');
-                 myH1.textContent = jsonObj['head'];
-                header.appendChild(myH1);
-            }
-            
-            function table(jsonObj) {
-                
-                var services = jsonObj['services'];
-                
-                for (var i = 0; i < list.length; i++) {
-                    var columns = document.createElement('tr');
-                    var rows = document.createElement('th');
-                    var content = document.createElement('td');
-                    
-                    column.textContent = list[i].table;
-                    
-                    var name = list[i].services;
-                    for (var j = 0; j < name.length; j++) {
-                        var listItem = document.createElement('')
-                    }
-                }
-            }
-        </script>
+  <script src="js/data.js"></script>
 
         
 
