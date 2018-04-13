@@ -8,8 +8,11 @@
                 console.log(serviceInfo);
                 
                 document.getElementById('header').innerHTML = serviceInfo.head;
+           
+                document.getElementById('services').innerHTML = serviceInfo.table["0"].services;
+                    
+                }
                 
-                document.getElementById('headlineOne').innerHTML = serviceInfo.table
                 
-            } 
+
             

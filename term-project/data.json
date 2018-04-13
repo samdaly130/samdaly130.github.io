@@ -4,28 +4,17 @@
     "table" : [
      
       { "services": [
-         "True Wheel", 
-      "Adjust Wheel Bearing",
-      "Adjust Front Hub",
-      "Adjust Rear Hub",
-      "Clean Bike",
-      "Wax Bike",
-      "Clean and Lube Drivetrain",
-      "Overhaul Front Hub"
+         "True Wheel $5-$10", 
+      "Adjust Wheel Bearing $5-20",
+      "Adjust Front Hub $5",
+      "Adjust Rear Hub $10",
+      "Clean Bike $5-$15",
+      "Wax Bike $12",
+      "Clean and Lube Drivetrain $10-$25",
+      "Overhaul Front Hub $15-$25"
         ]
       },
 
-{ "prices" : [
-    "$5-$20",
-    "$5-$10",
-    "$5",
-    "$10",
-    "$5-$15",
-    "$12",
-    "$10-$25",
-    "$15-$25"
-    ]
-}
       ]
 }
       

@@ -274,6 +274,24 @@ padding: 2%}
 
 /* SERVICES PAGE */
 
+table {
+    display: flex;
+    align-items: center;
+    margin: 2% 2%;
+    border-spacing: 5px;
+}
+table, th, td {
+    border: 2px solid #222e50;
+    border-collapse: collapse;
+}
+th, td {padding: 15px;}
+th {text-align: left;}
+
+/* CONTACT US PAGE */
+
+.map {padding: 40px 0 0 0;}
+
+
 
 footer {
     background-color: #988f2a;

@@ -54,5 +54,17 @@ align-items: center}
     
     /* SALES PAGE */
     
-  
-}
+/* CONTACT US PAGE */
+    
+    .contact {
+        width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;}
+    
+    .contact form {
+        width: 50%;
+        padding: 20px;
+    }
+
