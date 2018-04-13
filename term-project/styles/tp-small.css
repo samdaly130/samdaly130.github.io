@@ -286,7 +286,10 @@ table, th, td {
     border-collapse: collapse;
 }
 th, td {padding: 15px;}
-th {text-align: left;}
+th {
+    color: #988f2a;
+    text-align: left;}
+td {color: #fe5f00;}
 
 /* CONTACT US PAGE */
 
