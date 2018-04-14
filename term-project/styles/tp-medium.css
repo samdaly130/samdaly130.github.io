@@ -54,8 +54,11 @@ img {vertical-align: middle; width: 100%;}
 .slideshow-container {
   width: 100%;
   display: flex;
+    flex-direction: column;
+    align-items: center;
   margin: 0;
 }
+.slideshow-container h1 
 
 /* Caption text */
 .text {
